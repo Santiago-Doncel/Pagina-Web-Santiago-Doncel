@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sector Desarrollo de Software & IA - Santiago Doncel Galvis. Creación de páginas web, automatizaciones y uso de agentes de IA para programación.">
+  <meta name="author" content="Santiago Doncel Galvis">
+  <title>Desarrollo de Software & IA | Santiago Doncel Galvis</title>
+
+  <!-- Hojas de Estilo Modulares -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23050b18'/><text x='50%' y='64%' font-size='52' font-weight='500' fill='%23f8fafc' font-family='serif' text-anchor='middle'>SD</text></svg>">
+</head>
+<body>
+
+  <!-- Esferas Difuminadas con Transición Azul Claro -> Azul Oscuro -> Gris -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-3" aria-hidden="true"></div>
+
+<!-- Encabezado y Navegación -->
+  <header class="main-header" role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Inicio - Santiago Doncel">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Santiago Doncel</span>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav role="navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="software.html" class="nav-link active">Desarrollo & IA</a></li>
+          <li><a href="marketing.html" class="nav-link">Marketing & Medios</a></li>
+          <li><a href="ventas.html" class="nav-link">Ventas & Operaciones</a></li>
+          <li><a href="contacto.html" class="nav-link nav-cta-btn">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main id="main-content" role="main">
+
+    <!-- HERO SECTOR SOFTWARE -->
+    <section class="section-padding" style="padding-top: 3.5rem;" aria-labelledby="software-hero-title">
+      <div class="container">
+        
+        <div class="section-header text-left">
+          <span class="section-kicker">Tecnología & Soluciones Digitales</span>
+          <h1 id="software-hero-title" class="hero-title" style="font-size: clamp(2.3rem, 5vw, 3.8rem);">
+            Desarrollo de <span class="text-serif-italic">Software</span>
+          </h1>
+          <p class="section-description">
+            Especializado en la <strong>creación de páginas web</strong> de alto rendimiento, desarrollo de <strong>automatizaciones</strong> para optimizar flujos de trabajo e integración de <strong>agentes de IA para programación</strong>.
+          </p>
+        </div>
+
+        <!-- LOS 3 PILARES ESPECÍFICOS SOLICITADOS -->
+        <div class="software-pillars-grid animate-fade-up">
+          
+          <!-- Pilar 1: Creación de Páginas Web -->
+          <div class="pillar-card">
+            <span class="pillar-number">01</span>
+            <h3>Creación de Páginas Web</h3>
+            <p>
+              Desarrollo de sitios web modernos, responsivos y con estructura optimizada para <strong>SEO técnico</strong>. Interfaces limpias con altos estándares de usabilidad, diseño adaptativo y código ordenado (HTML5, CSS3, JavaScript y CMS como WordPress).
+            </p>
+            <div class="tech-cloud" style="margin-top: 1rem;">
+              <span class="tech-chip">Frontend Moderno</span>
+              <span class="tech-chip">Diseño Responsivo</span>
+              <span class="tech-chip">SEO Técnico</span>
+              <span class="tech-chip">WordPress / JS</span>
+            </div>
+          </div>
+
+          <!-- Pilar 2: Automatizaciones -->
+          <div class="pillar-card">
+            <span class="pillar-number">02</span>
+            <h3>Automatizaciones</h3>
+            <p>
+              Diseño e implementación de flujos de trabajo automatizados para conectar plataformas, reducir tareas repetitivas y sincronizar información entre sistemas (pipelines ETL, webhooks, Make y scripts en Python/SQL).
+            </p>
+            <div class="tech-cloud" style="margin-top: 1rem;">
+              <span class="tech-chip">Pipelines ETL</span>
+              <span class="tech-chip">Make / No-Code</span>
+              <span class="tech-chip">Consultas SQL</span>
+              <span class="tech-chip">Flujos de Datos</span>
+            </div>
+          </div>
+
+          <!-- Pilar 3: Uso de Agentes de IA para Programación -->
+          <div class="pillar-card">
+            <span class="pillar-number">03</span>
+            <h3>Uso de Agentes de IA para Programación</h3>
+            <p>
+              Integración de agentes autónomos y modelos de lenguaje avanzados (<abbr title="Large Language Models">LLMs</abbr>) como aceleradores del ciclo de desarrollo: generación de lógica, refactorización, depuración asistida y orquestación multiagente.
+            </p>
+            <div class="tech-cloud" style="margin-top: 1rem;">
+              <span class="tech-chip">Arquitecturas Multiagente</span>
+              <span class="tech-chip">Prompt Engineering</span>
+              <span class="tech-chip">LLMs / Claude</span>
+              <span class="tech-chip">Desarrollo Acelerado</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOGRO EN INVESTIGACIÓN (SEMILLERO TECHCARE) -->
+    <section id="investigacion-ia" class="section-padding-sm" aria-labelledby="techcare-title">
+      <div class="container">
+        
+        <article class="liquid-glass-card animate-on-scroll" style="padding: 2.8rem;">
+          <div class="grid-2" style="align-items: center;">
+            
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                <span class="badge badge-gold">1.er Puesto Nacional</span>
+                <span class="badge badge-cyan">Semillero TechCare</span>
+              </div>
+
+              <h2 id="techcare-title" style="font-size: clamp(1.8rem, 3.5vw, 2.5rem); margin-bottom: 1rem;">
+                XII Encuentro Nacional de Semilleros de Investigación (Mayo 2026)
+              </h2>
+
+              <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.2rem;">
+                Lideré como investigador en el <strong>Semillero TechCare</strong> el desarrollo conceptual de <strong>arquitecturas multiagente para la automatización de procesos ETL</strong>, enfocado en mejorar la calidad en la toma de decisiones para pymes.
+              </p>
+
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.5rem;">
+                <li style="color: var(--color-text-secondary); font-size: 0.94rem;">
+                  <strong style="color: #38bdf8;">• Modelado Multiagente:</strong> Coordinación de roles autónomos para extracción, validación y consolidación de datos.
+                </li>
+                <li style="color: var(--color-text-secondary); font-size: 0.94rem;">
+                  <strong style="color: #38bdf8;">• Modelos de Lenguaje & Prompts:</strong> Integración de LLMs mediante técnicas avanzadas de Prompt Engineering.
+                </li>
+                <li style="color: var(--color-text-secondary); font-size: 0.94rem;">
+                  <strong style="color: #38bdf8;">• Aplicación Práctica:</strong> Eliminación de cuellos de botella manuales en el tratamiento de información empresarial.
+                </li>
+              </ul>
+
+              <a href="https://github.com/Santiago-Doncel" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <span>Ver GitHub de Santiago</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+
+            <figure class="profile-figure" style="max-width: 100%; border-radius: var(--radius-liquid-md);" data-lightbox data-lightbox-caption="Santiago Doncel Galvis y equipo Semillero TechCare con diplomas del Primer Puesto Nacional (Mayo 2026)">
+              <img 
+                src="img/semillero-techcare-premio.jpg" 
+                alt="Fotografía de premiación nacional Semillero TechCare" 
+                class="profile-img"
+                style="height: 320px; width: 100%; object-fit: cover; border-radius: var(--radius-liquid-md);"
+                loading="lazy"
+              >
+            </figure>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- INVENTARIO TÉCNICO Y BASES DE DATOS -->
+    <section class="section-padding-sm" aria-labelledby="tabla-skills-title">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-kicker">Capacidades Técnicas</span>
+          <h2 id="tabla-skills-title">Lenguajes, Bases de Datos & Herramientas</h2>
+        </div>
+
+        <div class="table-responsive animate-on-scroll">
+          <table class="custom-table" summary="Tabla de habilidades técnicas de Santiago Doncel en desarrollo, bases de datos y certificaciones">
+            <caption>Inventario Técnico y Certificaciones</caption>
+            <thead>
+              <tr>
+                <th scope="col">Especialidad</th>
+                <th scope="col">Tecnología / Herramienta</th>
+                <th scope="col">Aplicación Concreta</th>
+                <th scope="col">Validación Oficial</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Desarrollo Web</strong></td>
+                <td><code>HTML5 / CSS3 / JavaScript</code></td>
+                <td>Creación de páginas web responsivas, diseño UI/UX y WordPress</td>
+                <td><span class="badge badge-cyan">Proyectos en Producción</span></td>
+              </tr>
+              <tr>
+                <td><strong>Automatizaciones</strong></td>
+                <td><code>Make / Python / Pipelines ETL</code></td>
+                <td>Conexión de herramientas, procesamiento y limpieza de datos</td>
+                <td><span class="badge badge-gold">Premio Nacional TechCare</span></td>
+              </tr>
+              <tr>
+                <td><strong>Agentes de IA</strong></td>
+                <td><code>Prompt Engineering / LLMs</code></td>
+                <td>Orquestación multiagente, generación y refactorización de código</td>
+                <td><span class="badge badge-purple">Investigación Aplicada</span></td>
+              </tr>
+              <tr>
+                <td><strong>Backend & Lógica</strong></td>
+                <td><code>Java (POO, Arreglos, Matrices)</code></td>
+                <td>Lógica computacional estructurada, algoritmos y JavaFX</td>
+                <td><span class="badge badge-blue">Oracle Academy (2025-2026)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Bases de Datos</strong></td>
+                <td><code>SQL / MySQL / Workbench</code></td>
+                <td>Modelado relacional, normalización y consultas estructuradas</td>
+                <td><span class="badge badge-cyan">Database Foundations (Oracle)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Control & Metodología</strong></td>
+                <td><code>Git / GitHub / Scrum</code></td>
+                <td>Control de versiones colaborativo y metodologías ágiles</td>
+                <td><span class="badge badge-blue">Académico / Práctico</span></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">
+                  <em>Certificaciones Oracle Academy acreditadas: <strong>Java Foundations (2026)</strong>, <strong>Database Foundations (2025)</strong> y <strong>Java Fundamentals (2025)</strong>.</em>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NAVEGACIÓN ENTRE SECTORES -->
+    <section class="section-padding-sm">
+      <div class="container text-center">
+        <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Explora los otros sectores</h3>
+        <div class="btn-group" style="justify-content: center;">
+          <a href="marketing.html" class="btn btn-secondary">
+            <span>Marketing & Medios</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="ventas.html" class="btn btn-secondary">
+            <span>Ventas & Operaciones</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="contacto.html" class="btn btn-primary">
+            <span>Contactar</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <aside id="imageLightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Visualizador de Imagen">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Cerrar vista">&times;</button>
+      <img id="lightboxImg" src="" alt="Vista ampliada" class="lightbox-img">
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="main-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="nav-brand" style="margin-bottom: 0.8rem;">
+            <span class="brand-dot"></span>
+            <span class="brand-name">Santiago Doncel</span>
+          </div>
+          <p style="font-size: 0.92rem; color: var(--color-text-muted); font-weight: 300;">
+            Desarrollo de software, automatizaciones y agentes de IA en Bogotá D.C.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="software.html">Desarrollo & IA</a></li>
+            <li><a href="marketing.html">Marketing & Medios</a></li>
+            <li><a href="ventas.html">Ventas & Operaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Redes</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/Santiago-Doncel" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/santiago-doncel-4a2b92311/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/sant_doncell?evlk=MTVpcDYzenp3eTBoOA==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 0.4rem;">
+            <strong>santdoncel@gmail.com</strong>
+          </p>
+          <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 0.4rem;">
+            <strong>+57 305 3490660</strong>
+          </p>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted);">
+            Bogotá D.C., Colombia
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Santiago Doncel Galvis.</div>
+        <div>Sector Desarrollo de Software & Automatizaciones.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

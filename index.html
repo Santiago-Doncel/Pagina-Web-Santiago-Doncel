@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio Profesional de Santiago Doncel Galvis - Desarrollo de Software, Marketing Digital y Operaciones Comerciales.">
+  <meta name="author" content="Santiago Doncel Galvis">
+  <title>Santiago Doncel Galvis | Portafolio Profesional</title>
+
+  <!-- Hojas de Estilo Modulares -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23050b18'/><text x='50%' y='64%' font-size='52' font-weight='500' fill='%23f8fafc' font-family='serif' text-anchor='middle'>SD</text></svg>">
+</head>
+<body>
+
+  <!-- Esferas Difuminadas con Transición Azul Claro -> Azul Oscuro -> Gris -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-3" aria-hidden="true"></div>
+
+<!-- Encabezado y Navegación Principal -->
+  <header class="main-header" role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Inicio - Santiago Doncel Galvis">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Santiago Doncel</span>
+      </a>
+
+      <!-- Botón Menú Móvil -->
+      <button class="mobile-nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Menú de Enlaces Dinámicos -->
+      <nav role="navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Inicio</a></li>
+          <li><a href="software.html" class="nav-link">Desarrollo & IA</a></li>
+          <li><a href="marketing.html" class="nav-link">Marketing & Medios</a></li>
+          <li><a href="ventas.html" class="nav-link">Ventas & Operaciones</a></li>
+          <li><a href="contacto.html" class="nav-link nav-cta-btn">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main id="main-content" role="main">
+
+    <!-- HERO SECTION MINIMALISTA -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Contenido Textual Hero -->
+          <div class="hero-content animate-fade-up">
+            <span class="hero-tag">Ingeniería de Software & Estrategia</span>
+
+            <h1 id="hero-title" class="hero-title">
+              Santiago <span class="text-serif-italic">Doncel</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Estudiante de <strong>Ingeniería de Software</strong> con un perfil multidisciplinar orientado a resultados: <strong>creación de páginas web</strong>, <strong>automatizaciones</strong> y <strong>uso de agentes de IA para programación</strong>, integrado con experiencia real en marketing audiovisual y operaciones comerciales.
+            </p>
+
+            <!-- Botones de Acción Inmediata -->
+            <div class="btn-group" style="margin-top: 0.5rem;">
+              <a href="#sectores-profesionales" class="btn btn-primary">
+                <span>Ver Portafolio</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+              </a>
+              <a href="contacto.html" class="btn btn-secondary">
+                <span>Contactar</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+
+            <!-- Datos Rápidos -->
+            <div class="tech-cloud" style="margin-top: 0.8rem;">
+              <span class="tech-chip">📍 Bogotá D.C.</span>
+              <span class="tech-chip">🎓 U. Compensar</span>
+              <span class="tech-chip">🌐 Inglés B2</span>
+              <span class="tech-chip">🏆 1.er Puesto Nal. Investigación</span>
+            </div>
+          </div>
+
+          <!-- Imagen Principal del Usuario (Nueva Imagen Vertical) -->
+          <div class="hero-media-wrapper animate-fade-up delay-1">
+            <figure class="profile-figure" data-lightbox data-lightbox-caption="Santiago Doncel Galvis">
+              <img 
+                src="img/santiago-perfil-nuevo.jpg" 
+                alt="Retrato de Santiago Doncel Galvis" 
+                class="profile-img"
+                width="380"
+                height="460"
+                loading="eager"
+              >
+            </figure>
+          </div>
+
+        </div>
+
+        <!-- Métricas Rápidas Liquid Glass -->
+        <div class="hero-stats-row animate-on-scroll">
+          <div class="stat-card">
+            <div class="stat-number gold">1.º Puesto</div>
+            <div class="stat-label">Investigación Nacional IA (TechCare)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Áreas de Impacto (Software, Marketing, Ventas)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">B2</div>
+            <div class="stat-label">Inglés Certificado por Compensar</div>
+          </div>
+        </div>
+
+    <hr class="glow-divider">
+
+    <!-- SECCIÓN: LOS 3 SECTORES PROFESIONALES -->
+    <section id="sectores-profesionales" class="section-padding" aria-labelledby="sectores-title">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 id="sectores-title">Tres Sectores de Aplicación</h2>
+          <p class="section-description">
+            Soluciones con criterio técnico, sensibilidad visual y eficiencia operativa.
+          </p>
+        </div>
+
+        <div class="sectors-grid">
+          
+          <!-- Sector 1: Desarrollo de Software & IA -->
+          <article class="liquid-glass-card sector-card animate-on-scroll">
+            <div>
+              <div class="sector-header">
+                <span class="sector-kicker-tag">Tecnología & Código</span>
+                <h3>Desarrollo de Software</h3>
+              </div>
+
+              <p>
+                <strong>Creación de páginas web</strong> modernas y responsivas, desarrollo de <strong>automatizaciones</strong> para optimizar procesos y <strong>uso de agentes de IA para programación</strong>. Bases sólidas en Java (POO), bases de datos relacionales SQL y metodologías ágiles.
+              </p>
+
+              <div class="tech-cloud">
+                <span class="tech-chip">Páginas Web</span>
+                <span class="tech-chip">Automatizaciones</span>
+                <span class="tech-chip">Agentes de IA</span>
+                <span class="tech-chip">Java / SQL</span>
+                <span class="tech-chip">Make / ETL</span>
+              </div>
+            </div>
+
+            <div class="sector-card-footer">
+              <span style="font-size: 0.85rem; color: var(--color-accent-cyan);">Código & Algoritmos</span>
+              <a href="software.html" class="btn btn-secondary btn-sm" aria-label="Ir a Desarrollo de Software">
+                <span>Explorar Sector</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Sector 2: Marketing Digital & Creación de Contenido -->
+          <article class="liquid-glass-card sector-card animate-on-scroll delay-1">
+            <div>
+              <div class="sector-header">
+                <span class="sector-kicker-tag" style="color: #c084fc;">Creatividad & Medios</span>
+                <h3>Marketing & Medios</h3>
+              </div>
+
+              <p>
+                Fotografía profesional y creación de contenido comercial para marcas como <em>Fresa Mía</em> y <em>Dra. Alison Cuchia</em>. Cobertura visual en conciertos multitudinarios y festivales masivos como <mark>Rock al Parque</mark> y <em>Desorden Público</em>.
+              </p>
+
+              <div class="tech-cloud">
+                <span class="tech-chip">Fotografía Profesional</span>
+                <span class="tech-chip">Rock al Parque</span>
+                <span class="tech-chip">Diseño Publicitario</span>
+                <span class="tech-chip">Dirección de Arte</span>
+                <span class="tech-chip">Instagram Content</span>
+              </div>
+            </div>
+
+            <div class="sector-card-footer">
+              <span style="font-size: 0.85rem; color: #c084fc;">Impacto Visual</span>
+              <a href="marketing.html" class="btn btn-secondary btn-sm" aria-label="Ir a Marketing y Fotografía">
+                <span>Explorar Sector</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Sector 3: Ventas, Operaciones & Liderazgo Comercial -->
+          <article class="liquid-glass-card sector-card animate-on-scroll delay-2">
+            <div>
+              <div class="sector-header">
+                <span class="sector-kicker-tag" style="color: #34d399;">Gestión & Operación</span>
+                <h3>Ventas & Operaciones</h3>
+              </div>
+
+              <p>
+                Administración de sistemas <abbr title="Point of Sale">POS</abbr>, facturación electrónica, atención asertiva al cliente, diseño de checklists de arqueo de caja con reducción del 90% en diferencias contables y coordinación de eventos como el <em>Coca-Cola Food Fest</em>.
+              </p>
+
+              <div class="tech-cloud">
+                <span class="tech-chip">Sistemas POS</span>
+                <span class="tech-chip">Control de Caja</span>
+                <span class="tech-chip">Coca-Cola Food Fest</span>
+                <span class="tech-chip">Gestión de Turnos</span>
+                <span class="tech-chip">Atención al Cliente</span>
+              </div>
+            </div>
+
+            <div class="sector-card-footer">
+              <span style="font-size: 0.85rem; color: #34d399;">Eficiencia en Negocio</span>
+              <a href="ventas.html" class="btn btn-secondary btn-sm" aria-label="Ir a Ventas y Operaciones">
+                <span>Explorar Sector</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOGRO NACIONAL TECHCARE -->
+    <section class="section-padding-sm" aria-labelledby="premio-title">
+      <div class="container">
+        <div class="liquid-glass-card animate-on-scroll" style="padding: 2.8rem;">
+          <div class="grid-2" style="align-items: center;">
+            <div>
+              <span class="badge badge-gold" style="margin-bottom: 0.8rem;">Reconocimiento Nacional</span>
+              <h2 id="premio-title" style="margin-bottom: 1rem; font-size: clamp(1.8rem, 3.5vw, 2.5rem);">
+                Primer Lugar Nacional en Investigación — Semillero TechCare
+              </h2>
+              <p style="font-size: 1.05rem; line-height: 1.7;">
+                Galardonado en el <strong>XII Encuentro Nacional de Semilleros de Investigación (Mayo 2026)</strong> por el desarrollo conceptual de <em>arquitecturas multiagente aplicadas a la automatización de procesos ETL</em>, orientadas a optimizar la toma de decisiones en pymes.
+              </p>
+              <div class="btn-group" style="margin-top: 1.5rem;">
+                <a href="software.html#investigacion-ia" class="btn btn-secondary btn-sm">
+                  <span>Ver Detalle de Investigación</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <figure class="profile-figure" style="max-width: 100%; border-radius: var(--radius-liquid-md);" data-lightbox data-lightbox-caption="Equipo del Semillero TechCare con los diplomas del Primer Lugar Nacional (Mayo 2026)">
+              <img 
+                src="img/semillero-techcare-premio.jpg" 
+                alt="Equipo del Semillero TechCare con los diplomas del primer puesto nacional" 
+                class="profile-img"
+                style="height: 300px; width: 100%; object-fit: cover; border-radius: var(--radius-liquid-md);"
+                loading="lazy"
+              >
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: TABLA COMPARATIVA -->
+    <section class="section-padding" aria-labelledby="tabla-resumen-title">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-kicker">Resumen General</span>
+          <h2 id="tabla-resumen-title">Matriz de Habilidades & Trayectoria</h2>
+        </div>
+
+        <div class="table-responsive animate-on-scroll">
+          <table class="custom-table" summary="Tabla comparativa de competencias de Santiago Doncel en software, marketing y operaciones">
+            <caption>Capacidades Principales</caption>
+            <thead>
+              <tr>
+                <th scope="col">Sector</th>
+                <th scope="col">Enfoque Principal</th>
+                <th scope="col">Herramientas & Métodos</th>
+                <th scope="col">Resultado / Logro Clave</th>
+                <th scope="col">Página</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Software</strong></td>
+                <td>Páginas web, automatizaciones y agentes de IA</td>
+                <td><code>HTML/CSS/JS</code>, <code>Java</code>, <code>SQL</code>, <code>Make</code>, <code>LLMs</code></td>
+                <td>1.er Puesto Nal. Semilleros (TechCare)</td>
+                <td><a href="software.html">Ir a Software &rarr;</a></td>
+              </tr>
+              <tr>
+                <td><strong>Marketing</strong></td>
+                <td>Fotografía profesional y diseño comercial</td>
+                <td>Fotografía Réflex, Lightroom, Social Media</td>
+                <td>Coberturas en vivo en <mark>Rock al Parque</mark></td>
+                <td><a href="marketing.html">Ir a Marketing &rarr;</a></td>
+              </tr>
+              <tr>
+                <td><strong>Ventas</strong></td>
+                <td>Sistemas POS, control de caja y logística</td>
+                <td>Software POS, Facturación, Checklist de Arqueo</td>
+                <td>Reducción del 90% en errores contables</td>
+                <td><a href="ventas.html">Ir a Ventas &rarr;</a></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="5">
+                  <em>Formación en Ingeniería de Software (Fundación Universitaria Compensar) e Inglés B2 certificado (Compensar).</em>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal / Lightbox -->
+  <aside id="imageLightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Visualizador de Imagen">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Cerrar vista">&times;</button>
+      <img id="lightboxImg" src="" alt="Vista ampliada" class="lightbox-img">
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+  </aside>
+
+  <!-- Pie de Página Minimalista -->
+  <footer class="main-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col">
+          <div class="nav-brand" style="margin-bottom: 0.8rem;">
+            <span class="brand-dot"></span>
+            <span class="brand-name">Santiago Doncel</span>
+          </div>
+          <p style="font-size: 0.92rem; color: var(--color-text-muted); font-weight: 300;">
+            Estudiante de Ingeniería de Software. Creación de páginas web, automatizaciones y operaciones en Bogotá D.C.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Sectores</h4>
+          <ul class="footer-links">
+            <li><a href="software.html">Desarrollo & IA</a></li>
+            <li><a href="marketing.html">Marketing & Medios</a></li>
+            <li><a href="ventas.html">Ventas & Operaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Redes</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/Santiago-Doncel" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/santiago-doncel-4a2b92311/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/sant_doncell?evlk=MTVpcDYzenp3eTBoOA==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto Directo</h4>
+          <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 0.4rem;">
+            <strong>santdoncel@gmail.com</strong>
+          </p>
+          <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 0.4rem;">
+            <strong>+57 305 3490660</strong>
+          </p>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted);">
+            Bogotá D.C., Colombia
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Santiago Doncel Galvis.</div>
+        <div>Diseñado con HTML5, CSS3 y JavaScript Modular.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

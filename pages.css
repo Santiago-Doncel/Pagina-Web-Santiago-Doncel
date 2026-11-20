@@ -1,0 +1,373 @@
+/* ==========================================================================
+   PORTAFOLIO PROFESIONAL - SANTIAGO DONCEL GALVIS
+   Estilos de Páginas: Baskerville en Títulos, Tipografía Pareja en el Resto
+   ========================================================================== */
+
+/* --- HERO SECTION (index.html) --- */
+.hero-section {
+  min-height: calc(88vh - var(--nav-height));
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 4.5rem 0 5.5rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr;
+  align-items: center;
+  gap: 4.5rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.hero-tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent-cyan);
+  font-weight: 600;
+}
+
+.hero-title {
+  font-family: var(--font-title);
+  font-size: clamp(2.8rem, 6.5vw, 4.8rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.18rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.hero-media-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+  margin-top: 2.5rem;
+}
+
+/* --- SECTOR HUB (3 Sectores en index.html) --- */
+.sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.2rem;
+}
+
+.sector-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.sector-header {
+  margin-bottom: 1.5rem;
+}
+
+.sector-kicker-tag {
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--color-accent-cyan);
+  display: block;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+.sector-card h3 {
+  font-family: var(--font-title);
+  font-size: 1.75rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.sector-card p {
+  font-family: var(--font-body);
+  color: var(--color-text-secondary);
+  font-size: 0.98rem;
+  font-weight: 400;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.sector-card-footer {
+  margin-top: auto;
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --- SECTOR SOFTWARE (3 Pilares Solicitados) --- */
+.software-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pillar-card {
+  padding: 2.2rem;
+  border-radius: var(--radius-liquid-md);
+  background: var(--liquid-glass-bg);
+  border: 1px solid var(--liquid-glass-border);
+  box-shadow: var(--liquid-glass-shadow);
+  transition: all var(--transition-smooth);
+}
+
+.pillar-card:hover {
+  background: var(--liquid-glass-hover);
+  border-color: var(--liquid-glass-border-hover);
+  transform: translateY(-4px);
+}
+
+/* Número de pilar en la tipografía pareja */
+.pillar-number {
+  font-family: var(--font-body);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent-cyan);
+  margin-bottom: 0.8rem;
+  display: block;
+  letter-spacing: -0.02em;
+}
+
+.pillar-card h3 {
+  font-family: var(--font-title);
+  font-size: 1.45rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.pillar-card p {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* --- CONTACTO MINIMALISTA DIRECTO --- */
+.contact-direct-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.contact-card-minimal {
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-liquid-md);
+  background: var(--liquid-glass-bg);
+  border: 1px solid var(--liquid-glass-border);
+  box-shadow: var(--liquid-glass-shadow);
+  transition: all var(--transition-liquid);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+.contact-card-minimal:hover {
+  background: var(--liquid-glass-hover);
+  border-color: var(--liquid-glass-border-hover);
+  transform: translateY(-5px);
+  box-shadow: var(--liquid-glass-shadow-hover);
+}
+
+.contact-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.contact-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent-cyan);
+}
+
+.contact-card-label {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+/* Valor de contacto en la tipografía pareja */
+.contact-card-val {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  word-break: break-word;
+  letter-spacing: -0.01em;
+}
+
+.contact-card-sub {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--color-accent-soft-blue);
+  margin-top: 0.4rem;
+  display: block;
+  font-weight: 400;
+}
+
+/* --- LINEA DE TIEMPO MINIMALISTA --- */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin: 2.5rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 7px;
+  width: 1px;
+  background: linear-gradient(180deg, var(--color-accent-cyan), rgba(255, 255, 255, 0.1), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.8rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2rem;
+  top: 6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--color-bg-primary);
+  border: 2px solid var(--color-accent-cyan);
+}
+
+.timeline-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.timeline-role {
+  font-family: var(--font-title);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.timeline-company {
+  font-family: var(--font-body);
+  color: var(--color-accent-soft-blue);
+  font-size: 0.96rem;
+  font-weight: 500;
+}
+
+.timeline-date {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+}
+
+.timeline-body ul {
+  list-style: none;
+  margin-top: 0.8rem;
+}
+
+.timeline-body ul li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.timeline-body ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-cyan);
+}
+
+/* Grids Comunes */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.2rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.2rem;
+}
+
+/* Responsividad */
+@media (max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  .hero-content {
+    align-items: center;
+  }
+  
+  .hero-stats-row {
+    width: 100%;
+  }
+
+  .sectors-grid,
+  .software-pillars-grid,
+  .contact-direct-grid,
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,122 @@
+/* ==========================================================================
+   PORTAFOLIO PROFESIONAL - SANTIAGO DONCEL GALVIS
+   Animaciones Suaves, Difuminados y Efectos Visuales
+   ========================================================================== */
+
+/* --- Animaciones de Fondo Flotante (Orbes Difuminadas) --- */
+@keyframes floatGlow {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translate(30px, -40px) scale(1.15);
+    opacity: 0.55;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.35;
+  }
+}
+
+@keyframes floatGlowReverse {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-35px, 35px) scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+}
+
+/* --- Pulso Sutil para Badges --- */
+@keyframes pulseDot {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(56, 189, 248, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0);
+  }
+}
+
+/* --- Entrada Suave (Fade In Up) --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* --- Clases Utilitarias de Animación --- */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Retardos escalonados */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+
+/* Decoración ambiental: Esferas Difuminadas con Transición Azul Claro -> Azul Oscuro -> Gris */
+.ambient-glow {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(85px);
+}
+
+/* Esfera 1 (Superior): Azul claro / Cian */
+.ambient-glow-1 {
+  top: -5%;
+  right: -5%;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.22) 0%, rgba(37, 99, 235, 0.1) 60%, transparent 80%);
+  animation: floatGlow 14s ease-in-out infinite;
+}
+
+/* Esfera 2 (Intermedia): Azul marino profundo */
+.ambient-glow-2 {
+  top: 40%;
+  left: -10%;
+  width: 580px;
+  height: 580px;
+  background: radial-gradient(circle, rgba(20, 45, 85, 0.25) 0%, rgba(14, 28, 54, 0.12) 60%, transparent 80%);
+  animation: floatGlowReverse 16s ease-in-out infinite;
+}
+
+/* Esfera 3 (Inferior): Gris pizarra / niebla de grafito */
+.ambient-glow-3 {
+  bottom: 5%;
+  right: 15%;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(100, 116, 139, 0.16) 0%, rgba(51, 65, 85, 0.08) 60%, transparent 80%);
+  animation: floatGlow 18s ease-in-out infinite alternate;
+}
